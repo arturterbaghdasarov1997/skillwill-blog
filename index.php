@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SkillWill Blog</title>
     <link rel="stylesheet" href="style.css">
 
     <?php require "variables.php"; ?>
@@ -42,7 +42,9 @@
     <div class="cards">
 
         <div class="card">
-            <img src="./Assets/Card-Image1.png" alt="">
+            <div class="image">
+                <img src="./Assets/Post1.png" alt="">
+            </div>
             <div class="project1">
                 <h3>
                     Project1
@@ -73,51 +75,6 @@
     </div>
         </div>
     </section>
-
-<!-- latest posts -->
-<section class="latest-posts">
-    <div class="container-small2">
-        <h2>
-            Latest <span>Posts</span>
-        </h2>
-        <div class="posts">
-        <div class="post">
-            <div class="latest-post">
-        <div class="latest-post-new">
-            <img src="./Assets/Post1.png" alt="">
-            <div class="post1">
-                <div class="text">
-                    <h4>
-                        Lorem ipsum dolor 
-                    </h4>
-                    <span>
-                        April 24, 2022 - 5 min read
-                    </span>
-                    <p>
-                        Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim
-                    </p>
-                </div>
-            </div>
-
-            <?php
-                for ($i = 0; $i < sizeof($posts); $i++) {
-                    echo '<div class="post2">
-                    <img src="' . $posts[$i]['image'] . '" alt="">
-                    <div class="project1"><h4>' . $posts[$i]['title'] . '</h4><div>
-                    <span>' . $posts[$i]['span'] . '</span>
-                    <p>' . $posts[$i]['body'] . '</p>
-                        </div>
-                    </div>
-                </div>';
-                }
-            ?>
-        </div>
-            </div>
-        </div>
-        </div>
-            
-
-</section>
 
     <!-- footer -->
 <div class="footer">
