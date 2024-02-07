@@ -98,43 +98,25 @@
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="post">
-        <div class="latest-post-new">
-            <img src="./Assets/Post2.png" alt="">
-            <div class="post2">
-                <div class="text">
-                    <h4>
-                        Lorem ipsum dolor 
-                    </h4>
-                    <span>
-                        April 03, 2022 - 4 min read
-                    </span>
-                    <p>
-                        Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim
-                    </p>
-                </div>
+            <?php
+                for ($i = 0; $i < sizeof($posts); $i++) {
+                    echo '<div class="post2">
+                    <img src="' . $posts[$i]['image'] . '" alt="">
+                    <div class="project1"><h4>' . $posts[$i]['title'] . '</h4><div>
+                    <span>' . $posts[$i]['span'] . '</span>
+                    <p>' . $posts[$i]['body'] . '</p>
+                        </div>
+                    </div>
+                </div>';
+                }
+            ?>
+        </div>
             </div>
         </div>
-
-        <div class="post">
-        <div class="latest-post-new">
-            <img src="./Assets/Post3.png" alt="">
-            <div class="post3">
-                <div class="text">
-                    <h4>
-                        Lorem ipsum dolor 
-                    </h4>
-                    <span>
-                        March 12, 2022 - 6 min read
-                    </span>
-                    <p>
-                        Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim
-                    </p>
-                </div>
-            </div>
         </div>
+            
+
 </section>
 
     <!-- footer -->
